@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "BarlowRegular";  
+    src: url("../fonts/Barlow-Regular-webfont.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BarlowBold";  
+    src: url("../fonts/Barlow-Bold-webfont.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BarlowSemiBold";  
+    src: url("../fonts/Barlow-SemiBold-webfont.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BarlowMedium";  
+    src: url("../fonts/Barlow-Medium-webfont.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
