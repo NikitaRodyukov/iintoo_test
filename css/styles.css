@@ -23,10 +23,9 @@ main{
 	width: 44rem;
 	height: 62.5rem;
 
-	background-image: url("img/bg.jpg");
+	background-image: url("/img/bg.jpg");
 	background-repeat: no-repeat;
 }
-
 
 .bg-image svg{
 	margin: 3rem 3.13rem;
