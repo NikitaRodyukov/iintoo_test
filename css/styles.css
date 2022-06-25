@@ -28,12 +28,19 @@ a:active{
 	margin-bottom: 3.13rem; 
 }
 
-.hide{
-	display:none;
+.text{
+	margin-bottom: 1.25rem;
+
+	font-family: "BarlowMedium";
+	font-size: 2.3rem;
+	color:#2A4A5C;
 }
 
-/*---------Main wrapper------*/
-
+.subtext{
+	font-family: "BarlowMedium";
+	font-size: 1.2rem;
+	color:#7B8A92
+}
 
 .wrapper{
 	display: flex;
@@ -69,20 +76,6 @@ a:active{
 	box-shadow: 0 0.25rem 2rem rgba(0,0,0,0.1);	
 }
 
-.text{
-	margin-bottom: 1.25rem;
-
-	font-family: "BarlowMedium";
-	font-size: 2.3rem;
-	color:#2A4A5C;
-}
-
-.subtext{
-	font-family: "BarlowMedium";
-	font-size: 1.2rem;
-	color:#7B8A92
-}
-
 .register-with{
 	display: flex; 
     flex-wrap: wrap;
@@ -106,6 +99,15 @@ a:active{
 	font-family: "BarlowRegular";
 
 	cursor: pointer;
+
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.3s
+}
+
+.register-with__block:hover,
+.register-with__block:focus{
+	transform: scale(1.1);
+	border-radius: 5px;
 }
 
 .register-with__block:last-child{
@@ -116,9 +118,6 @@ a:active{
 	position: absolute;
 	top: 9px;
 	left: 6px;
-
-	transition-timing-function: ease-in-out;
-	transition-duration: 0.3s
 }
 
 .register-with__block--fb{
@@ -128,9 +127,6 @@ a:active{
 .register-with__block--fb:focus,
 .register-with__block--fb:hover{
 	background-color: #082f5e;
-
-	transform: scale(1.1);
-	border-radius: 5px;
 }
 
 .register-with__block--li{
@@ -140,9 +136,6 @@ a:active{
 .register-with__block--li:focus,
 .register-with__block--li:hover{
 	background-color: #6dafd3;
-
-	transform: scale(1.1);
-	border-radius: 5px;
 }
 
 /*---------Separator--------*/
@@ -327,12 +320,16 @@ input[type="submit"]{
 
 	border-radius: 5px;
 	background-color: #3698FB;
+
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.2s;
 }
 
 input[type="submit"]:hover,
 input[type="submit"]:focus{
-	background-color: #082f5e;
+	background-color: #2578ca;
 	cursor: pointer;
+	border-radius: 10px;
 }
 
 /*---------Additional styles to checkbox and radio--------*/
