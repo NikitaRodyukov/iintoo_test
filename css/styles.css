@@ -398,7 +398,7 @@ input[type="radio"]{
 	}
 }	
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1050px){
 	.account-type__radio{
 		margin-bottom: 1rem;
 	}
@@ -409,7 +409,7 @@ input[type="radio"]{
 	}
 
 	.account-type__radio:nth-child(4){
-		margin-right: 1.6rem;
+		margin-right: 1.66rem;
 	}
 
 	.register-with__block,
@@ -445,13 +445,13 @@ input[type="radio"]{
 	}
 }
 
-@media screen and (max-width: 502px){
+@media screen and (max-width: 525px){
 	.account-type__wrapper{
 		width: 17.5rem;
 	}	
 
 	.account-type__radio:nth-child(4){
-		margin-right: 1.55rem;
+		margin-right: 1.66rem;
 	}
 
 	.register-with__block{
