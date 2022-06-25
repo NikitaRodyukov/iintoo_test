@@ -1,3 +1,5 @@
+/*---------Main---------*/
+
 html{
 	box-sizing: border-box;
 	font-family: "BarlowRegular";
@@ -13,11 +15,34 @@ main{
 	width: 100%;
 }
 
+a{
+	color: #3698FB;
+}
+
+a:hover,
+a:active{
+	color: #0962bb;
+}
+
+.mr-btm{
+	margin-bottom: 3.13rem; 
+}
+
+.hide{
+	display:none;
+}
+
+/*---------Main wrapper------*/
+
+
 .wrapper{
 	display: flex;
 	justify-content: center;
 	margin: 6.25rem auto;
 }
+
+/*---------Background Image------*/
+
 
 .bg-image{
 	width: 44rem;
@@ -30,6 +55,9 @@ main{
 .bg-image svg{
 	margin: 3rem 3.13rem;
 }
+
+/*---------Registration Form------*/
+
 
 .registration-form{
 	position: relative;
@@ -59,10 +87,6 @@ main{
 	display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;	
-}
-
-.mr-btm{
-	margin-bottom: 3.13rem; 
 }
 
 .register-with__block{
@@ -132,6 +156,9 @@ main{
 	left: 9px;
 }
 
+/*---------Separator--------*/
+
+
 .separator{
 	display: flex;
 	justify-content: center;	
@@ -159,6 +186,9 @@ main{
 .separator__text{
 	font-size: 0.7rem;
 }
+
+/*---------Phone and email--------*/
+
 
 .input-block{
 	display: flex; 
@@ -216,9 +246,8 @@ input:focus{
 	outline: none;
 }
 
-.hide{
-	display:none;
-}
+/*---------Account type--------*/
+
 
 .account-type{
 	display: flex;
@@ -239,6 +268,10 @@ input:focus{
 	flex-wrap: wrap;
 
 	margin-bottom: 1.56rem;
+}
+
+.account-type__radio:hover{
+	cursor: pointer;
 }
 
 .account-type__radio::after{
@@ -272,14 +305,28 @@ input:focus{
 	border-radius: 5px;
 }
 
+input[type="radio"]:hover{
+	transform: scale(1.1);
+}
+
+/*---------Mailing agreement--------*/
+
+
 .mail-agreement{
 	font-size: 0.9rem;
 	color:#7B8A92;
 }
 
-.mail-agreement > a{
-	color: #3698FB;
+.mail-agreement__wrapper{
+	cursor: pointer;
 }
+
+input[type="checkbox"]:hover{
+	transform: scale(1.1);
+}
+
+/*---------Create account button--------*/
+
 
 input[type="submit"]{
 	width: 15.4rem;
@@ -299,6 +346,9 @@ input[type="submit"]:focus{
 	cursor: pointer;
 }
 
+/*---------Additional styles to checkbox and radio--------*/
+
+
 input[type="checkbox"],
 input[type="radio"]{
 	width: 0.88rem;
@@ -309,15 +359,8 @@ input[type="radio"]{
 	transition-duration: 0.1s;
 }
 
-input[type="radio"]:hover,
-input[type="radio"]:focus{
-	transform: scale(1.1);
-	cursor: pointer;
-}
+/*---------Media queries--------*/
 
-/* 
-	---------------Media------------------
-*/
 
 @media screen and (max-width: 1415px){
 
@@ -329,6 +372,7 @@ input[type="radio"]:focus{
 @media screen and (max-width: 1238px){
 	.account-type__wrapper{
 		width: 17.5rem;
+		margin-bottom: 0.2rem;
 	}
 		
 	.account-type__radio{
@@ -337,11 +381,7 @@ input[type="radio"]:focus{
 
 	.account-type__radio:nth-child(4){
 		margin-right: 1.6rem;
-	}
-
-	.account-type__wrapper{
-		margin-bottom: 0.2rem;
-	}
+	}	
 
 	input[type="submit"]{
 		margin-bottom: 2rem;
@@ -360,7 +400,7 @@ input[type="radio"]:focus{
 		left: 8px;
 	}
 
-	div.register-with,
+	.register-with,
 	.input-block{
 		flex-direction: column;
 	}
@@ -401,12 +441,9 @@ input[type="radio"]:focus{
 	}
 
 	.account-type__wrapper{
+		width: 17.5rem;
 		margin-bottom: 0.2rem;
 	}
-
-	.account-type__wrapper{
-		width: 17.5rem;
-	}	
 
 	.account-type__radio:nth-child(4){
 		margin-right: 1.6rem;
