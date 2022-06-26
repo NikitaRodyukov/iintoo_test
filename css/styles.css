@@ -1,4 +1,28 @@
+/*---------Fonts---------*/
+
+@font-face {
+    font-family: "BarlowRegular";  
+    src: url("../fonts/Barlow-Regular-webfont.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BarlowSemiBold";  
+    src: url("../fonts/Barlow-SemiBold-webfont.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "BarlowMedium";  
+    src: url("../fonts/Barlow-Medium-webfont.woff") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
 /*---------Main---------*/
+
 
 html{
 	box-sizing: border-box;
@@ -168,7 +192,7 @@ a:active{
 	font-size: 0.7rem;
 }
 
-/*---------Phone and email--------*/
+/*---------Phone and email forms--------*/
 
 
 .input-block{
@@ -347,7 +371,7 @@ input[type="radio"]{
 /*---------Media queries--------*/
 
 
-@media screen and (max-width: 1160px){
+@media (max-width: 1160px){
 
 	.registration-form{
 		padding: 4rem 2rem 0 2rem;
@@ -394,7 +418,7 @@ input[type="radio"]{
 	}
 }	
 
-@media screen and (max-width: 1050px){
+@media (max-width: 1050px){
 	.account-type__radio{
 		margin-bottom: 1rem;
 	}
@@ -419,7 +443,7 @@ input[type="radio"]{
 	}
 }
 
-@media screen and (max-width: 680px){
+@media (max-width: 680px){
 	main{
 		padding: 2rem 2rem;
 	}
@@ -441,7 +465,7 @@ input[type="radio"]{
 	}
 }
 
-@media screen and (max-width: 525px){
+@media (max-width: 525px){
 	.account-type__wrapper{
 		width: 17.5rem;
 	}	
@@ -453,27 +477,4 @@ input[type="radio"]{
 	.register-with__block{
 		font-size: 0.9rem;
 	}
-}
-
-/*---------Fonts---------*/
-
-@font-face {
-    font-family: "BarlowRegular";  
-    src: url("../fonts/Barlow-Regular-webfont.woff") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "BarlowSemiBold";  
-    src: url("../fonts/Barlow-SemiBold-webfont.woff") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: "BarlowMedium";  
-    src: url("../fonts/Barlow-Medium-webfont.woff") format("truetype"); 
-    font-style: normal; 
-    font-weight: normal;
 }
